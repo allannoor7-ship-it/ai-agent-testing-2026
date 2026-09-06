@@ -8,6 +8,22 @@
 
 **Avaliku versiooni märkus:** kohalikud rajad on üldistatud. Kontoandmeid sisaldavad kolm ekraanipilti jäid privaatsesse auditipakki. Testitulemused ja piirangud säilisid muutmata.
 
+---
+
+## Uuendus, september 2026
+
+Allpool olev uurimisraport kirjeldab AAT-001 kuni AAT-006 seeriat ja jääb muutmata kujul alles. Ametlik AAT-seeria lõpeb AAT-006-ga.
+
+Edasine töö käib struktureeritud QA-jooksu formaadis: `plan.json`, `run.json`, tegevuslogi, evidence, `validation.json` ja jääkriskid. Jooksu terviklust kontrollib eraldi valideerija, mis annab märke `VALID` või nimetab põhjuse, miks jooks selle märke ei saa.
+
+**[CASE-07: Kvaliteedivärava valideerimine](./CASE-07_JUDGE_VALIDATION.md)**
+
+Süsteem, kus AI kirjutab teksti ja teine AI otsustab selle kvaliteedi. Kirjutaja läbis inimese pimetesti tulemusega 18/20. Automaatne hindaja langes sama inimesega kokku 7 korral 20-st ja kiitis heaks ainsa teksti, mille inimene tagasi lükkas.
+
+Case näitab hindaja mõõtmist eraldi komponendina, vale-negatiivi ja vale-positiivi erinevat hinda, ning kandidaatparandust, mis tõstis kokkulangevuse 90%-le. Staatus on avatud defekt: parandus on mõõdetud ja skilli sisse viimata. Jaotis 8 selgitab, miks 90% ei ole veel sõltumatu tõend.
+
+---
+
 ## Lühikokkuvõte
 
 AI-agent tegutseb. Ta loeb faile, kasutab brauserit, muudab andmeid ja teeb vaheotsuseid.
